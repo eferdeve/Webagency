@@ -1,0 +1,1243 @@
+@font-face {
+    font-family: 'Robotoblack';
+    src: url('fonts/Roboto-Black.eot');
+    src: url('fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Black.woff2') format('woff2'),
+        url('fonts/Roboto-Black.woff') format('woff'),
+        url('fonts/Roboto-Black.ttf') format('truetype'),
+        url('fonts/Roboto-Black.svg#Roboto-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Robotoregular';
+    src: url('fonts/Roboto-Regular.eot');
+    src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Regular.woff2') format('woff2'),
+        url('fonts/Roboto-Regular.woff') format('woff'),
+        url('fonts/Roboto-Regular.ttf') format('truetype'),
+        url('fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+	font-family: 'robotoregular', Arial, sans-serif;
+	margin: 0;
+}
+
+main
+{
+	margin-top: 90px;
+	background-color: #FBFBFB;
+}
+
+p
+{
+	color: #686C71;
+}
+
+/*------------------------------------------------HEADER------------------------------------------------*/
+/*RESPONSIVE NAVIGATION*/
+.nav
+{
+	
+	height: 87px;
+	width: 100%;
+	line-height: 70px;
+	position: absolute;
+	top: 20%;
+	display: none;
+}
+
+.menu
+{
+	background-color: white;
+	width: 100%;
+}
+
+.menu a
+{
+	text-decoration: none;
+	font-size: 1.4em;
+	color: gray;
+	padding-left: 40%;
+	line-height: 70px;
+	width: 100%;
+}
+
+label
+{
+	margin: 0 30px 0 85%;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 100%;
+	
+}
+
+#toggle
+{
+	display: none;
+}
+/*RESPONSIVE NAVIGATION*/
+#logo_webagency
+{
+	padding-top: 15px;
+}
+
+#block_logo_nav
+{
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 0px;
+	width: 100%;
+	height: 90px;
+	position: fixed;
+	top:0;
+	z-index: 5;
+}
+
+#block_logo_nav ul
+{
+	display: flex;
+	height: 80px;
+	margin: auto;
+}
+
+#block_logo_nav li
+{
+	margin:0 20px;
+	display: flex;
+	height: 100%;
+}
+
+#block_logo_nav a
+{
+	text-decoration: none;
+	color: #787878;
+	display: flex;
+	align-items: center;
+}
+
+#block_logo_nav a:hover
+{
+	border-top: 3px solid #5CADD3;
+	color: #565656;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SLIDER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+@keyframes AutoSlide {
+	0% {
+		left: 0px; /*1ère image*/
+	}
+	15% {
+		left: 0px; /*idem pour attente*/
+	}
+	35% {
+		left: -100%; /*2ème image*/
+	}
+	50% {
+		left: -100%; /*idem pour attente*/
+	}
+	100% {
+		left: 0px; /*1ère image*/
+	}
+}
+
+#slideshow 
+{
+	position: relative;
+	width: 100%;
+	height: 620px;
+	overflow: hidden;
+	box-shadow: 3px 3px 0px grey;
+}
+
+#slider
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+#sContent img
+{
+	width: 100%;
+	height: 100%;
+}
+
+#sContent 
+{
+	display: flex;
+	height: 100%;
+	position: relative;
+	width: 200%;
+	/*animation-name: AutoSlide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;*/
+}
+
+/*------------------------------------------------TEXTE SLIDER -----------------------------------------*/
+.titre
+{
+	color: #5CADD3;
+	font-family: 'robotoblack', Arial, serif;
+}
+
+#titre_general
+{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	z-index: 2;
+}
+
+#titre_general p
+{
+	color: white;
+	font-size: 1em;
+	margin-bottom: 7%;
+}
+
+h1
+{
+	font-family: 'robotoblack', Arial, serif;
+	color: white;
+	font-size: 2.3em;
+	margin-bottom: 0px;
+}
+
+
+
+#titre_general a
+{
+	border-radius: 4px;
+	border-bottom: 4px solid #4494BB;
+	width: 25%;
+	height: 3%;
+	background: #5CADD3;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	font-size: 1.2em;
+	
+}
+/*------------------------------------------------TEXTE SLIDER --------------------------------------------*/
+
+/*-----------------------------------------------------FLECHES SLIDER-----------------------------------------------------*/
+
+#fleches
+{
+	width: 100%;
+	display: flex;
+	position: absolute;
+	top: 50%;
+	justify-content: space-between;
+	z-index: 2;
+}
+
+.fleche_droite
+{
+	background-color: rgba(31, 50, 48, 0.3);
+	border-radius: 100%;
+	color: white;
+	width: 70px;
+	height: 70px;
+	margin-right: -30px;
+}
+
+.fleche_droite i
+{
+	display: flex;
+	position: absolute;
+	top: 26%;
+	right: 5px;
+}
+
+.fleche_gauche
+{
+    background-color: rgba(31, 50, 48, 0.3);
+    border-radius: 50%;
+    color: white;
+    width: 70px;
+    height: 70px;
+    margin-left: -30px;
+}
+
+.fleche_gauche i
+{
+	display: flex;
+	position: absolute;
+	top: 26%;
+	left: 5px;
+}
+/*-----------------------------------------------------FLECHES SLIDER-----------------------------------------------------*/
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  NOS SERVICES  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.ns_centre
+{
+	text-align: center;
+}
+
+h2
+{
+	font-family: 'robotoblack', Arial, serif;
+	font-size: 2.5em;
+	text-align: center;
+	margin-bottom: 1%;
+}
+
+
+/*----------------------------SEPARATEUR-------------------------*/
+#separateur_nos_services
+{
+	width: 15px;
+	height: 15px;
+	border: 2px solid white;
+	margin: auto;
+	border-radius: 50%;
+	background-color: #5CADD3;
+}
+
+#separateur_nos_services:after
+{
+	display: inline-block;
+    margin: -9px 20px 8px 20px;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #999;
+    width: 100px;
+    float: right;
+}
+
+#separateur_nos_services:before
+{
+	display: inline-block;
+    margin: 7px 20px 8px 20px;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #999;
+    width: 100px;
+    float: left;
+}
+/*----------------------------IMAGE NOS SERVICES--------------------*/
+#block_services
+{
+	display: flex;
+	width: 100%;
+	margin-top: 50px;
+}
+
+#image_services
+{
+	width: 70%;
+	margin: auto;
+}
+
+#image_services img
+{
+	width: 70%;
+	margin-left: 20%;
+}
+/*----------------------------IMAGE NOS SERVICES--------------------*/
+/*-------------------------------CONTENER ICONES + ASIDE A DROITE-------------------------------*/
+#contener_icones_aside
+{
+	display: flex;
+	flex-direction: column;
+	margin-right: 5%;
+
+}
+/*---------------ICONE GRAPH---------------*/
+#graph
+{
+	display: flex;
+	height: 23%;
+}
+
+#graph_icone i
+{
+	color: #5CADD3;
+	border: solid 1px #DCDCDC;
+	border-radius: 50%;
+	padding: 20px;
+}
+
+#graph_icone
+{	
+	margin-left: 5%;
+	padding-left: 2%;
+	margin-top: 2%;
+	position: relative;
+}
+
+#graph aside
+{
+	position: relative;
+	margin-left: 5%;
+	margin-bottom: 10%;
+}
+
+#graph_icone i:after
+{
+	content:"";
+	background: #5CADD3;
+	border-radius: 50%;
+	border: solid 2px #5CADD3;
+	padding: 5px;
+	position: absolute;
+	right:-6%;
+	top:40%;
+}
+/*---------------ICONE CUBE----------------*/
+#cube
+{
+	display: flex;
+	height: 25%;
+}
+
+#cube i
+{
+	border: solid 1px #DCDCDC;
+	border-radius: 50%;
+	color: #5CADD3;
+	padding: 20px;
+}
+
+#cube_icone 
+{
+	
+	padding-left: 2%;
+	
+	margin-left: 5%;
+	margin-top: 2%;
+	position: relative;
+}
+
+#cube aside
+{
+	margin-left: 5%;
+	position: relative;
+}
+
+#cube_icone i:after
+{
+	content:"";
+	background: #5CADD3;
+	border-radius: 50%;
+	border: solid 2px #5CADD3;
+	padding: 5px;
+	position: absolute;
+	right: -6%;
+	top: 35%;
+}
+/*---------------ICONE CHEESE----------------*/
+#cheese
+{
+	display: flex;
+	height: 25%;
+}
+
+#cheese i
+{
+	border: solid 1px #DCDCDC;
+	border-radius: 100%;
+	color: #5CADD3;
+	padding: 20px;
+}
+
+#cheese_icone
+{
+	padding-top: 2%;
+	padding-left: 2%;
+	margin-left: 5%;
+	position: relative;
+}
+
+#cheese aside
+{
+	margin-left: 5%;
+	position: relative;
+}
+
+#cheese_icone i:after
+{
+	content:"";
+	background: #5CADD3;
+	border-radius: 50%;
+	border: solid 2px #5CADD3;
+	padding: 5px;
+	position: absolute;
+	right: -6%;
+	top: 45%;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NOS PROJETS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+#nos_projets h2
+{
+	font-family: 'robotoblack', Arial, serif;
+	font-size: 2.5em;
+}
+
+.color_police
+{
+	color: #686C71
+}
+/*------------------------------------------ SEPARATEUR ------------------------------------*/
+#separateur_np
+{
+	width: 15px;
+	height: 15px;
+	border: 2px solid white;
+	margin: auto;
+	border-radius: 50%;
+	background-color: #5CADD3;
+}
+
+#separateur_np:after
+{
+	display: inline-block;
+    margin: -9px 20px 8px 20px;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #999;
+    width: 100px;
+    float: right;
+}
+
+#separateur_np:before
+{
+	display: inline-block;
+    margin: 7px 20px 8px 20px;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #999;
+    width: 100px;
+    float: left;
+}
+/*------------------------------------------ MENU ---------------------------------------*/
+#nos_projets ul
+{
+	border: solid 3px #FBFBFB;
+	width: 24%;
+	border-radius: 8px;
+	display: flex;
+	padding-right: 0px;
+	padding-left: 0;
+}
+
+#nos_projets li:nth-child(1)
+{
+	border-bottom: solid 3px #FBFBFB;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#nos_projets li.listactive
+{
+	background-color: #5CADD3;
+	border-bottom: 3px solid #468CAD;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#nos_projets li.listactive a
+{
+	color: white;
+}
+
+#nos_projets ul li:nth-child(1) i
+{
+	opacity: 1;
+}
+
+#nos_projets li:last-child
+{
+	border-bottom: solid 3px #FBFBFB;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#nos_projets li:last-child:hover
+{
+	background-color: #5CADD3;
+	border-bottom: 3px solid #468CAD;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#nos_projets a
+{
+	text-decoration: none;
+	text-align: center;
+	color: #65696E;
+	margin: auto;
+	width: 100%;
+}
+
+#nos_projets nav
+{
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+#nos_projets li
+{
+	background-color: #E5E5E5;
+	border-bottom: solid 3px #FBFBFB;
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	height: 40px;
+	width: 100%;
+	position: relative;
+}
+
+#nos_projets ul i
+{
+
+	color: #468CAD;
+	font-size: 1.5em;
+	position: absolute;
+	top: 110%;
+	left: 5%;
+	opacity: 0;
+	height: 30%;
+	width: 90%;
+	padding-top: 30%;
+	margin-top: -40%;
+}
+
+#nos_projets ul i:hover
+{
+	opacity: 1;
+}
+
+#nos_projets li:hover 
+{
+	background-color: #5CADD3;
+	border-bottom: 3px solid #468CAD;
+}
+
+#nos_projets li:hover a
+{
+	color: white;
+}
+/*------------------------------------------ IMAGES PORTFOLIO ---------------------------------------*/
+#portfoliolist
+{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative; 
+	justify-content: space-evenly;
+	margin-bottom: 3%;
+}
+
+#portfoliolist img
+{
+	width: 360px;
+	height: 100%;
+	margin-bottom: 20px;
+}
+
+figure
+{
+	position: relative;
+    margin: 15px;
+}
+
+figcaption
+{
+	color: white;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+
+figcaption:hover
+{
+	opacity: 1;
+}
+
+#portfoliolist i
+{
+	background-color: #5CADD3;
+	position: absolute;
+	border: solid 2px white;
+	font-size: 1.2em;
+	left: 80%;
+	top: -26%;
+	border-radius: 50%;
+	padding: 4%;
+}
+
+.item_show
+{
+	position: absolute;
+	width: 95%;
+	background-color: rgba(66, 69, 70, 0.6);
+	top: 64%;
+	padding-left: 5%;
+}
+
+.item_showp
+{
+	color: white;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTACT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+#contact
+{
+	height: 18%;
+	position: relative;
+}
+
+#formulaire
+{
+	background-color: rgba(255, 255, 255, 0.7);
+	width: 20%;
+	position: absolute;
+	left: 65%;
+	top: 4%;
+	z-index: 2;
+}
+
+fieldset h2
+{
+	text-align: left;
+	font-size: 1.5em;
+}
+
+#contact input
+{
+	border: solid 1px #686C71;
+	border-radius: 5px;
+	height: 25px;
+	width: 90%;
+	
+	
+}
+
+#map
+{
+	position: relative;
+    width: 100%;
+    background: #5cadd3;
+    height: 600px;
+}
+
+#map iframe
+{
+	border: 0;
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    opacity: 0.7;
+    z-index: 1;
+    border: none;
+}
+
+
+
+#bouton_form
+{
+	width: 30%;
+	height: 30px;
+	background-color: #5CADD3;
+	border-radius: 4px;
+	border-bottom: 4px solid #4494BB;
+	text-align: center;
+}
+
+#bouton_form a
+{
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
+
+#bouton_form p
+{
+    padding-top: 6px;
+}
+
+fieldset
+{
+	 border-width: 0px;
+}
+
+input
+{
+	padding-left: 20px;
+}
+
+textarea
+{
+	padding-left: 20px;
+	width: 90%;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> RESPONSIVE DESIGN <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*----------------- HEADER -----------------------*/
+@media all and (max-width: 480px)
+{
+/*RESPONSIVE NAVIGATION*/
+@media only screen and (max-width: 480px)
+{
+	.nav{
+		display: block;
+		z-index: 6;
+	}
+
+	label{
+		display: block;
+		cursor: pointer;
+	}
+
+	.menu{
+		text-align: center;
+		width: 100%;
+		display: none;
+	}
+
+	.menu a{
+		display: block;
+		border-bottom: 1px solid #EAEAEB;
+		margin: 0;
+	}
+
+	#toggle:checked + .menu{
+		display: block;
+	}
+	
+}
+/*RESPONSIVE NAVIGATION*/	
+	#block_page
+	{
+		margin-top: 22%;
+		position: relative;
+	}
+
+	#block_logo_nav
+	{
+		display: flex;
+		flex-direction: row-reverse;
+		position: fixed;
+		height: 15%;
+		width: 100%;
+		margin: auto;
+	}
+
+	#logo_webagency
+	{
+		margin: auto;
+		padding-top: 0;
+	}
+
+	#block_logo_nav nav
+	{
+		
+		display: none;
+	}
+
+	#block_logo_nav nav ul
+	{
+		justify-content: center;
+		margin: auto;
+		height: 70px;
+		padding-left: 0;
+	}
+
+/*------------------ SLIDER ---------------------*/
+	#fleches
+	{
+		display: none;
+	}
+
+	#slider
+	{
+		width: 100%;
+		height: 200px;
+
+	}
+
+	h1
+	{
+		font-size: 1.5em;
+	}
+
+	h2 
+	{
+    	font-family: 'robotoblack', Arial, serif;
+    	font-size: 2.1em;
+    	text-align: center;
+    	margin-bottom: 1%;
+	}
+
+	#sContent img
+	{
+		width: 480px;
+		height: 200px;
+	}
+
+	#slideshow 
+	{
+		height: 200px;
+		width: 100%;
+	}
+
+	#titre_general 
+	{
+    	font-size: 1em;
+    	position: absolute;
+    	top: 5%;
+    	left: 5%;
+    	text-align: left;
+	}
+
+	#titre_general p
+	{
+		font-size: 0.8em;
+		margin-bottom: 5%;
+		margin-top: 0;
+	}
+
+	#titre_general a
+	{
+		font-size: 1em;
+	}
+
+	#sContent
+	{
+		height: 200px;
+		margin: auto;
+		position: relative;
+	}
+
+/*----------------------------------- NOS SERVICES ----------------------------------*/
+	#block_services
+	{
+		flex-direction: column;
+	}
+
+	#graph_icone i:after
+	{
+	
+		position: absolute;
+		right:-8%;
+		top:24%;
+	}
+
+	#graph aside
+	{
+		margin-bottom: 0;
+	}
+
+	#cube_icone i:after
+	{
+		position: absolute;
+		right: -8%;
+		top: 25%;
+	}
+
+	#cheese i
+	{
+		position: relative;
+	}
+
+
+	#cheese_icone i:after
+	{
+		position: absolute;
+		right: -8%;
+		
+	}
+	#image_services 
+	{
+		margin: auto;
+		padding-bottom: 20px;
+	}
+
+	#image_services img
+	{
+		margin-left: 0%;
+		width: 100%;
+	}
+	/*----------------------------------- NOS PROJETS --------------------------------*/
+	#nos_projets p
+	{
+		font-size: 0.9em;
+	}
+
+	#nos_projets nav
+	{
+		width: 100%;
+		margin-top: auto;
+		position: relative;
+	}
+
+	#nos_projets ul
+	{
+		position: relative;
+		width: 80%;
+	}
+
+	#nos_projets ul i
+	{
+		top: 105%;
+	}
+
+	.fa-caret-down:before
+	{
+		position: absolute;
+		top: 60%;
+		left: 45%;
+	}
+
+	.item_show
+	{
+		top: 65%;
+	}
+
+	/*----------------------------------- CONTACT --------------------------------*/
+	#contact
+	{
+		display: flex;
+		flex-direction: column-reverse;
+
+	
+	}
+	#formulaire
+	{
+		display: block;
+		position: relative;
+		left: 10%;
+		width: 80%;
+		background-color: rgba(36, 175, 255, 0.1);
+		border-radius: 10px;
+		margin-bottom: 5%;
+
+	}
+
+	#formulaire input
+	{
+		width: 100%;
+	}
+
+	#formulaire textarea
+	{
+		width: 100%;
+	}
+
+
+	fieldset
+	{	
+		border-radius: 5px;
+		margin-bottom: 20px;
+		width: 80%;
+		padding-left: 5%;
+	}
+}
+
+@media all and (min-width: 481px) and (max-width: 839px)
+{
+	/*-------------------------SLIDER----------------------*/
+	#slider
+	{
+		height: 320px;
+	}
+
+	#slideshow
+	{
+		height: 320px;
+	}
+
+	#sContent
+	{
+		height: 320px;
+	}
+
+	#sContent img
+	{
+		width: 50%;
+		height: 320px;
+	}
+
+	#fleches
+	{
+		top: 40%;
+	}
+
+	#titre_general
+	{
+		top: 10%;
+	}
+	/*----------------------------- NOS SERVICES -------------------*/
+	#block_services
+	{
+		flex-direction: column;
+	}
+
+	#graph aside
+	{
+		margin-bottom: 0;
+	}
+	#graph_icone i:after
+	{
+		top: 30%;
+	}
+
+	#cube_icone i:after
+	{
+		top: 30%;
+	}
+
+	#cheese_icone i:after
+	{
+		top: 35%;
+	}
+	/*-------------------------- NOS PROJETS -----------------------*/
+	#nos_projets ul
+	{
+		width: 80%;
+	}
+
+	#nos_projets ul i
+	{
+		top: 120%;
+	}
+
+	#portfoliolist img 
+	{
+    	width: 335px;
+   	 	height: 100%;
+   	 	margin-bottom: 20px;
+	}
+
+	.item_show 
+	{
+		top: 62%;
+	}
+	/*---------------------- CONTACT -------------------------------*/
+	#formulaire
+	{
+		position: relative;
+		width: 49%;
+		left: 28%;
+		background-color: rgba(36, 175, 255, 0.1);
+		margin-bottom: 40px;
+		border-radius: 10px;
+		
+	}
+
+	#contact
+	{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+} 
+
+@media all and (min-width: 840px) and (max-width: 1024px)
+{
+	/*------------------ SLIDER ------------------*/
+	#slider
+	{
+		height: 380px;
+	}
+
+	#slideshow
+	{
+		height: 380px;
+	}
+
+	#sContent
+	{
+		height: 380px;
+	}
+
+	#sContent img
+	{
+		width: 50%;
+		height: 380px;
+	}
+
+	#titre_general
+	{
+		top: 20%;
+	}
+
+	#fleches
+	{
+		top: 45%;
+	}
+	/*------------------------ NOS SERVICES -------------------------*/
+	#block_services
+	{
+		flex-direction: column;
+	}
+
+	#image_services img
+	{
+		width: 60%;
+	}
+
+	#graph aside
+	{
+		margin-bottom: 0;
+	}
+	/*----------------------- NOS PROJETS -------------------------*/
+	#nos_projets ul
+	{
+		width: 80%;
+	}
+
+	#nos_projets ul i
+	{
+		top: 130%;
+	}
+	/*------------------------ CONTACT -----------------------------*/
+	#formulaire
+	{
+		left: 35%;
+		width: 35%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
